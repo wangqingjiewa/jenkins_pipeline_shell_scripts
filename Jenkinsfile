@@ -1,7 +1,7 @@
 node {
    
    	stage 'Checkout'
-   		git url: 'https://github.com/TTFHW/jenkins_pipeline_shell_scripts.git'
+   		git url: 'https@github.com:wangqingjiewa/jenkins_pipeline_shell_scripts.git'
    	stage 'Build'
    		sh './myBuild.sh'
     stage "testing"
@@ -49,6 +49,7 @@ node {
     server.promote promotionConfig
    
    stage 'Deploy'
+         git url: 'https@github.com:wangqingjiewa/jenkins_pipeline_shell_scripts.git'
    		sh './myDeployment.sh'
   
 }
