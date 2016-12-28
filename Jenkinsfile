@@ -38,7 +38,7 @@ node {
         'targetRepo'         : 'libs-release-local',
 
         //Optional parameters
-        'comment'            : 'this is the promotion comment',
+        'comment'            : 'This build has been tested and was ready to promote',
         'sourceRepo'         : 'libs-snapshot-local',
         'status'             : 'Released',
         'includeDependencies': true,
